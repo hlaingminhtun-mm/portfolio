@@ -1,0 +1,26 @@
+.contact-compose{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;border-top:1px solid #376881;margin-top:38px;padding-top:38px}
+.compose-icon{display:grid;place-items:center;width:45px;height:45px;border:1px solid #7097b7;border-radius:14px;color:#b4e7ff;font-size:22px;margin-bottom:22px;background:#ffffff08}
+.compose-intro h3{font-size:27px;letter-spacing:-.7px;line-height:1.4;font-weight:500;margin-bottom:16px}
+.compose-intro>p{font-size:12px;line-height:1.9;color:#c4dfef;max-width:310px}
+.compose-intro>.compose-note{font-size:11px;color:#b2ccdf;margin-top:24px}
+.compose-intro>a{display:inline-flex;gap:15px;color:#c9bded;font-size:11px;line-height:1.8;margin-top:5px}
+.contact-form{display:flex;flex-direction:column;gap:20px;min-width:0}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.contact-form label{display:flex;flex-direction:column;gap:9px;font-size:11px;line-height:1.6;color:#e9f5fd}
+.contact-form label:has(.optional-label){display:block}
+.optional-label{color:#b2ccdf;font-size:10px;margin-left:4px}
+.contact-form input,.contact-form textarea{width:100%;min-width:0;font:inherit;font-size:12px;line-height:1.6;padding:13px 15px;border:1px solid #648ba6;background:#194967;color:white;border-radius:10px;transition:border-color .2s,background .2s}
+.contact-form label:has(.optional-label) input{display:block;margin-top:9px}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#b5cddd;opacity:1}
+.contact-form input:focus,.contact-form textarea:focus{outline:2px solid #7dd3fc;outline-offset:3px;border-color:#a2e1ff;background:#205574}
+.contact-form textarea{resize:vertical;min-height:140px;max-height:400px}
+.form-submit{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.form-submit p{font-size:9px;color:#b2ccdf;margin:0}
+.form-submit button{border:1px solid #bee9ff;background:#d9f1ff;color:#11496c;display:flex;gap:24px;align-items:center;font-size:12px;font-weight:600;border-radius:999px;padding:14px 23px;white-space:nowrap;transition:background .2s,transform .2s}
+.form-submit button:hover{background:white;transform:translateY(-2px)}
+.form-submit button span{font-size:20px}
+.form-notice{font-size:11px;color:#d7eaf7;line-height:1.8;margin:0}
+.form-notice:empty{display:none}
+@media(max-width:800px){.contact-compose{gap:35px;grid-template-columns:.85fr 1.15fr}.compose-intro h3{font-size:23px}.form-row{grid-template-columns:1fr;gap:20px}.form-submit{align-items:flex-start;flex-direction:column;gap:15px}}
+@media(max-width:600px){.contact-compose{grid-template-columns:1fr;gap:30px;margin-top:30px;padding-top:30px}.compose-intro h3{font-size:25px}.compose-intro>p{max-width:100%;font-size:11px}.compose-intro>.compose-note{margin-top:17px}.compose-icon{margin-bottom:17px}.contact-form{gap:18px}.form-row{gap:18px}.form-submit{align-items:center;flex-direction:row;gap:12px}.form-submit p{font-size:8px;max-width:125px}.form-submit button{font-size:11px;gap:15px;padding:12px 17px}}
+@media(prefers-reduced-motion:reduce){.form-submit button:hover{transform:none}}
